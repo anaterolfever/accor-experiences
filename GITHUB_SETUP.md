@@ -1,5 +1,14 @@
 # Conectar este proyecto con GitHub
 
+## 0. Configurar tu nombre y email en Git (recomendado)
+
+Para que tus commits tengan tu identidad (sustituye por tus datos):
+
+```powershell
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"
+```
+
 ## 1. Completar la instalación de Git (si aplica)
 
 Si acabas de instalar Git con winget:
@@ -53,6 +62,12 @@ La primera vez que hagas `git push`, Windows puede abrir el **Git Credential Man
 1. GitHub → Settings → Developer settings → Personal access tokens → Generate new token.
 2. Marca al menos el permiso `repo`.
 3. Cuando Git pida contraseña en `git push`, pega el token (no tu contraseña de GitHub).
+
+## 6. Activar GitHub Pages (para este proyecto)
+
+1. En tu repositorio en GitHub: **Settings** → **Pages**.
+2. En **Source** elige **GitHub Actions**.
+3. Cada vez que hagas `git push` a `main`, el workflow desplegará la web en `https://TU_USUARIO.github.io/NOMBRE_REPO/`.
 
 ---
 

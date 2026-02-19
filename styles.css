@@ -1,0 +1,181 @@
+:root {
+  --accor-red: #c8102e;
+  --accor-navy: #1a1a2e;
+  --accor-navy-light: #16213e;
+  --white: #ffffff;
+  --gray-100: #f7f7f8;
+  --gray-200: #e8e8ec;
+  --gray-500: #6b7280;
+  --gray-700: #374151;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--accor-navy);
+  background: var(--gray-100);
+}
+
+.experiences-hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+@media (max-width: 900px) {
+  .experiences-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+}
+
+.experiences-hero__content {
+  max-width: 520px;
+}
+
+.experiences-hero__label {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accor-red);
+  margin-bottom: 0.75rem;
+}
+
+.experiences-hero__title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 1.25rem;
+  color: var(--accor-navy);
+}
+
+.experiences-hero__subtitle {
+  font-size: 1.125rem;
+  color: var(--gray-700);
+  margin: 0 0 2rem;
+  font-weight: 400;
+}
+
+.experiences-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .experiences-hero__actions {
+    justify-content: center;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.btn--primary {
+  background: var(--accor-red);
+  color: var(--white);
+  border: none;
+}
+
+.btn--primary:hover {
+  box-shadow: 0 6px 20px rgba(200, 16, 46, 0.4);
+}
+
+.btn--secondary {
+  background: var(--white);
+  color: var(--accor-navy);
+  border: 2px solid var(--gray-200);
+}
+
+.btn--secondary:hover {
+  border-color: var(--accor-navy);
+  color: var(--accor-navy);
+}
+
+.experiences-hero__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiences-hero__card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 400px;
+}
+
+@media (max-width: 900px) {
+  .experiences-hero__card-grid {
+    margin: 0 auto;
+  }
+}
+
+.card {
+  aspect-ratio: 1;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--white);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card--hotels {
+  background: linear-gradient(135deg, var(--accor-navy) 0%, var(--accor-navy-light) 100%);
+}
+
+.card--dining {
+  background: linear-gradient(135deg, #b91c1c 0%, var(--accor-red) 100%);
+}
+
+.card--spa {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+}
+
+.card--meetings {
+  background: linear-gradient(135deg, #1e3a5f 0%, var(--accor-navy-light) 100%);
+}
