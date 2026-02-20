@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Plan Auction – Accor Experiences</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="plan-auction-view" role="main">
+    <!-- Status Bar - iPhone -->
+    <header class="status-bar" aria-hidden="true">
+      <span class="status-bar__time">9:41</span>
+      <div class="status-bar__icons">
+        <span class="status-bar__signal"></span>
+        <span class="status-bar__wifi"></span>
+        <span class="status-bar__battery"></span>
+      </div>
+    </header>
+
+    <!-- App header: back + auction icon -->
+    <div class="app-header">
+      <button type="button" class="app-header__back" aria-label="Back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button type="button" class="auction-icon" aria-label="Auction">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2L14 8h6l-5 4 2 6-5-4-5 4 2-6-5-4h6l2-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Gallery in PV -->
+    <section class="gallery-pv" aria-label="Experience gallery">
+      <div class="gallery-pv__track">
+        <div class="gallery-pv__slide gallery-pv__slide--active">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80" alt="Paris Saint-Germain match" class="gallery-pv__img" />
+        </div>
+        <div class="gallery-pv__slide">
+          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80" alt="Hotel lounge" class="gallery-pv__img" />
+        </div>
+        <div class="gallery-pv__slide">
+          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&q=80" alt="Stadium experience" class="gallery-pv__img" />
+        </div>
+      </div>
+      <div class="gallery-pv__dots" role="tablist" aria-label="Slide">
+        <button type="button" class="gallery-pv__dot gallery-pv__dot--active" aria-selected="true" aria-label="Slide 1"></button>
+        <button type="button" class="gallery-pv__dot" aria-selected="false" aria-label="Slide 2"></button>
+        <button type="button" class="gallery-pv__dot" aria-selected="false" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="content">
+      <h1 class="content__title">Paris Saint-Germain – Bergamo</h1>
+      <p class="content__venue">ALL Accor Lounge</p>
+      <p class="content__date">17 September 2025</p>
+      <p class="content__points"><strong>15,000</strong> Points</p>
+    </div>
+
+    <!-- Common button (CTA) -->
+    <div class="cta-wrap">
+      <button type="button" class="common-button">Place bid</button>
+    </div>
+
+    <!-- Combined footer -->
+    <footer class="combined-footer">
+      <a href="#" class="combined-footer__link">Terms</a>
+      <a href="#" class="combined-footer__link">Privacy</a>
+      <a href="#" class="combined-footer__link">Help</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

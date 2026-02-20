@@ -1,0 +1,358 @@
+/* Plan-Auction View | Full – Accor Welcome design system
+   Ref: https://design.accor.com (Color, Typography iOS/Android) */
+
+:root {
+  /* Core brand – Welcome by Accor */
+  --primary: #1e1852;
+  --on-primary: #ffffff;
+  --primary-hover: #38326c;
+  --primary-pressed: #544e85;
+
+  --loyalty: #3d4892;
+  --on-loyalty: #ffffff;
+  --loyalty-container-low: #eaedf5;
+  --on-loyalty-container-low: #3d4892;
+
+  --accent: #068484;
+  --on-accent: #ffffff;
+  --accent-hover: #007576;
+  --accent-pressed: #006163;
+  --accent-container-low: #eef7f7;
+  --on-accent-container: #068484;
+
+  /* Surface – light theme */
+  --surface: #ffffff;
+  --surface-container-low: #ffffff;
+  --surface-container-mid: #f4f4f5;
+  --surface-container-hi: #ffffff;
+  --on-surface-low: #6f6e77;
+  --on-surface-mid: #3e3d48;
+  --on-surface-hi: #252339;
+
+  /* Outline */
+  --outline-low: #dadadd;
+  --outline-mid: #b0b0b7;
+  --focus: #3470df;
+
+  /* Typography scale (iOS/Android – design.accor.com) */
+  --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --heading-01: 700 34px/1.2 var(--font-system);
+  --heading-02: 700 28px/1.2 var(--font-system);
+  --title-01: 700 24px/1.17 var(--font-system);
+  --title-02: 700 20px/1.2 var(--font-system);
+  --subtitle: 500 17px/1.29 var(--font-system);
+  --body-01: 400 17px/1.29 var(--font-system);
+  --body-02: 400 15px/1.33 var(--font-system);
+  --body-strong-02: 500 15px/1.33 var(--font-system);
+  --body-03: 400 13px/1.38 var(--font-system);
+  --caption: 400 12px/1.33 var(--font-system);
+  --cta: 500 16px/1 var(--font-system);
+  --cta-text-link: 500 14px/1.43 var(--font-system);
+
+  /* Spacing – 8px stack between heading/subtitle (Welcome guidelines) */
+  --stack-sm: 8px;
+  --stack-md: 16px;
+  --space-inline: 20px;
+
+  --safe-top: env(safe-area-inset-top, 0);
+  --safe-bottom: env(safe-area-inset-bottom, 0);
+  --status-bar-h: 44px;
+  --header-h: 56px;
+  --footer-h: 52px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font: var(--body-01);
+  background: var(--surface-container-mid);
+  color: var(--on-surface-mid);
+  min-height: 100dvh;
+  padding-top: var(--safe-top);
+}
+
+.plan-auction-view {
+  max-width: 430px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 0 0 1px var(--outline-low);
+}
+
+/* Status Bar - iPhone */
+.status-bar {
+  height: var(--status-bar-h);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  font: var(--body-strong-02);
+  color: var(--on-surface-hi);
+  background: var(--surface);
+}
+
+.status-bar__icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.status-bar__signal,
+.status-bar__wifi,
+.status-bar__battery {
+  width: 18px;
+  height: 12px;
+  background: currentColor;
+  opacity: 0.9;
+}
+
+.status-bar__battery {
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+  background: transparent;
+  position: relative;
+}
+
+.status-bar__battery::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 0 1px 1px 0;
+}
+
+/* App header – back + auction/title */
+.app-header {
+  height: var(--header-h);
+  padding: 0 var(--space-inline);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--outline-low);
+}
+
+.app-header__back {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--on-surface-hi);
+  cursor: pointer;
+  border-radius: 12px;
+  margin: 0 -10px 0 -6px;
+}
+
+.app-header__back:hover {
+  background: var(--surface-container-mid);
+}
+
+.app-header__back:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.auction-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  border-radius: 12px;
+  margin: 0 -6px 0 -10px;
+}
+
+.auction-icon:hover {
+  background: var(--surface-container-mid);
+}
+
+.auction-icon:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Gallery in PV */
+.gallery-pv {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--surface-container-mid);
+}
+
+.gallery-pv__track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery-pv__slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.gallery-pv__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-pv__dots {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.gallery-pv__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease;
+}
+
+.gallery-pv__dot--active,
+.gallery-pv__dot:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.gallery-pv__dot:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.95);
+  outline-offset: 2px;
+}
+
+/* Content – 8px stack between title/subtitle (Welcome typography) */
+.content {
+  flex: 1;
+  padding: var(--stack-md) var(--space-inline) var(--stack-sm);
+  min-height: 0;
+}
+
+.content__title {
+  margin: 0 0 var(--stack-sm);
+  font: var(--title-01);
+  color: var(--on-surface-hi);
+}
+
+.content__venue {
+  margin: 0 0 var(--stack-sm);
+  font: var(--subtitle);
+  color: var(--accent);
+}
+
+.content__date {
+  margin: 0 0 var(--stack-sm);
+  font: var(--body-02);
+  color: var(--on-surface-low);
+}
+
+.content__points {
+  margin: 0;
+  font: var(--body-02);
+  color: var(--on-surface-mid);
+}
+
+.content__points strong {
+  font: var(--body-strong-02);
+  color: var(--loyalty);
+}
+
+/* Common button – primary CTA (Welcome primary) */
+.cta-wrap {
+  padding: 0 var(--space-inline) var(--stack-md);
+  flex-shrink: 0;
+}
+
+.common-button {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 14px;
+  background: var(--primary);
+  color: var(--on-primary);
+  font: var(--cta);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.common-button:hover {
+  background: var(--primary-hover);
+}
+
+.common-button:active {
+  background: var(--primary-pressed);
+  transform: scale(0.98);
+}
+
+.common-button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Combined footer */
+.combined-footer {
+  min-height: var(--footer-h);
+  padding: 12px var(--space-inline);
+  padding-bottom: calc(12px + var(--safe-bottom));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-shrink: 0;
+  border-top: 1px solid var(--outline-low);
+  background: var(--surface);
+}
+
+.combined-footer__link {
+  font: var(--cta-text-link);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.combined-footer__link:hover {
+  color: var(--accent-hover);
+}
+
+.combined-footer__link:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
