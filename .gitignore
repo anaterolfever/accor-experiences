@@ -1,19 +1,30 @@
-# Environment and secrets
-.env
-.env.local
-.env.*.local
-
-# Dependencies
-node_modules/
-
-# Optional: uncomment if you don't want to commit Figma export
-# figma-export/
-
-# OS and editor
+# OS
 .DS_Store
 Thumbs.db
-*.log
+desktop.ini
+
+# IDE / Editor
 .idea/
 .vscode/
 *.swp
 *.swo
+*~
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Build / Output
+dist/
+build/
+*.log
+.env
+.env.local
+*.local
+
+# Cursor
+.cursor/
