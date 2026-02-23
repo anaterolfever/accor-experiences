@@ -5,74 +5,283 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#ffffff" />
   <title>Plan Auction – Accor Experiences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="plan-auction-view" role="main">
-    <!-- Status Bar - iPhone -->
-    <header class="status-bar" aria-hidden="true">
+  <!-- ─── Plan-Auction View | Full  node: 1252:59580 ─── -->
+  <div class="screen" data-node-id="1252:59580">
+
+    <!-- Status Bar - iPhone  node: 1252:59795 -->
+    <div class="status-bar" aria-hidden="true" data-node-id="1252:59795">
       <span class="status-bar__time">9:41</span>
+      <div class="status-bar__dynamic-island"></div>
       <div class="status-bar__icons">
-        <span class="status-bar__signal"></span>
-        <span class="status-bar__wifi"></span>
-        <span class="status-bar__battery"></span>
+        <img src="https://www.figma.com/api/mcp/asset/cbe55f5a-9b23-4fd4-a06a-dec397855654" alt="" width="19" height="12" />
+        <img src="https://www.figma.com/api/mcp/asset/7b0e12c1-df99-4905-9117-dfd98249639d" alt="" width="17" height="12" />
+        <img src="https://www.figma.com/api/mcp/asset/d11ee1cc-174e-47ba-8b60-90e96045ddab" alt="" width="27" height="13" />
       </div>
-    </header>
-
-    <!-- App header: back + auction icon -->
-    <div class="app-header">
-      <button type="button" class="app-header__back" aria-label="Back">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-      <button type="button" class="auction-icon" aria-label="Auction">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M12 2L14 8h6l-5 4 2 6-5-4-5 4 2-6-5-4h6l2-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
     </div>
 
-    <!-- Gallery in PV -->
-    <section class="gallery-pv" aria-label="Experience gallery">
-      <div class="gallery-pv__track">
-        <div class="gallery-pv__slide gallery-pv__slide--active">
-          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80" alt="Paris Saint-Germain match" class="gallery-pv__img" />
-        </div>
-        <div class="gallery-pv__slide">
-          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80" alt="Hotel lounge" class="gallery-pv__img" />
-        </div>
-        <div class="gallery-pv__slide">
-          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&q=80" alt="Stadium experience" class="gallery-pv__img" />
-        </div>
+    <!-- App header  node: 1319:37624 -->
+    <div class="app-header" data-node-id="1319:37624">
+      <!-- ALL logo  node: 1319:37625 -->
+      <div class="app-header__logo" data-node-id="1319:37625">
+        <img src="https://www.figma.com/api/mcp/asset/260c82cc-03bc-4135-82cd-73cb4a4497f2" alt="ALL Accor Live Limitless" class="app-header__logo-img" />
       </div>
-      <div class="gallery-pv__dots" role="tablist" aria-label="Slide">
-        <button type="button" class="gallery-pv__dot gallery-pv__dot--active" aria-selected="true" aria-label="Slide 1"></button>
-        <button type="button" class="gallery-pv__dot" aria-selected="false" aria-label="Slide 2"></button>
-        <button type="button" class="gallery-pv__dot" aria-selected="false" aria-label="Slide 3"></button>
+      <!-- Points badge  node: 1319:37636 -->
+      <div class="app-header__points" data-node-id="1319:37636">
+        <img src="https://www.figma.com/api/mcp/asset/b4a24568-2bdc-42ab-a788-b6118bb41340" alt="" class="app-header__points-icon" width="18" height="18" />
+        <span class="app-header__points-value">25,500</span>
       </div>
-    </section>
-
-    <!-- Content -->
-    <div class="content">
-      <h1 class="content__title">Paris Saint-Germain – Bergamo</h1>
-      <p class="content__venue">ALL Accor Lounge</p>
-      <p class="content__date">17 September 2025</p>
-      <p class="content__points"><strong>15,000</strong> Points</p>
+      <!-- Nav actions  node: 1319:37626 -->
+      <div class="app-header__actions" data-node-id="1319:37626">
+        <button class="app-header__btn" aria-label="Search" data-node-id="50:826">
+          <img src="https://www.figma.com/api/mcp/asset/90dc8a01-a39b-43b8-b525-58644298c1d4" alt="" width="20" height="20" />
+        </button>
+        <button class="app-header__btn app-header__btn--avatar" aria-label="Profile" data-node-id="1319:37629">
+          <img src="https://www.figma.com/api/mcp/asset/0287816a-7ebc-466a-b19c-d69da6675e32" alt="" class="app-header__avatar" width="24" height="24" />
+          <span class="app-header__avatar-dot"></span>
+        </button>
+        <button class="app-header__btn app-header__btn--menu" aria-label="Menu" data-node-id="1319:37635">
+          <img src="https://www.figma.com/api/mcp/asset/712e88ee-41ff-4cdc-9706-40160e22ba18" alt="" width="24" height="17" />
+          <span class="app-header__menu-label">Menu</span>
+        </button>
+      </div>
     </div>
 
-    <!-- Common button (CTA) -->
-    <div class="cta-wrap">
-      <button type="button" class="common-button">Place bid</button>
+    <!-- Gallery in PV  node: 1252:59770 -->
+    <div class="gallery" data-node-id="1252:59770">
+      <!-- Hero images -->
+      <div class="gallery__track" id="galleryTrack">
+        <!-- Slide 1 -->
+        <div class="gallery__slide" data-node-id="1252:59774">
+          <img src="https://www.figma.com/api/mcp/asset/46471dd3-9c02-4b0b-8f11-f07ba8b8e73e" alt="Paris Saint-Germain experience" class="gallery__img" />
+          <div class="gallery__gradient"></div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="gallery__slide" data-node-id="1252:59775">
+          <img src="https://www.figma.com/api/mcp/asset/a763b94d-3f26-4ca4-a67e-393ed8e447a0" alt="ALL Accor Lounge" class="gallery__img" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="gallery__slide" data-node-id="1252:59776">
+          <img src="https://www.figma.com/api/mcp/asset/2ce78475-ffbf-4e0b-b9af-e9fa472786c8" alt="Stadium" class="gallery__img" />
+        </div>
+      </div>
+
+      <!-- Countdown badge (tag/Danger)  node: 1252:59790 -->
+      <div class="gallery__countdown" data-node-id="1252:59790">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="5" stroke="white" stroke-width="1.5"/><path d="M6 3.5V6.5L7.5 8" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>3d 13h 10m 20s</span>
+      </div>
+
+      <!-- Auction icon  node: 1252:59793 -->
+      <div class="gallery__auction-icon" data-node-id="1252:59793">
+        <img src="https://www.figma.com/api/mcp/asset/d39cea01-ec36-421f-b0c1-69b66bbbce4d" alt="" width="14" height="14" />
+      </div>
     </div>
 
-    <!-- Combined footer -->
-    <footer class="combined-footer">
-      <a href="#" class="combined-footer__link">Terms</a>
-      <a href="#" class="combined-footer__link">Privacy</a>
-      <a href="#" class="combined-footer__link">Help</a>
-    </footer>
-  </div>
+    <!-- Content  node: 1252:59581 -->
+    <div class="content" data-node-id="1252:59581">
+
+      <!-- Header: city, title, bid, meta -->
+      <div class="content__header" data-node-id="1252:59583">
+
+        <!-- City label  node: 1252:59586 -->
+        <div class="city-label" data-node-id="1252:59586">
+          <img src="https://www.figma.com/api/mcp/asset/c3069e83-4615-448d-adc0-47576da6a063" alt="" class="city-label__icon" width="9" height="12" />
+          <span class="city-label__text">Paris</span>
+        </div>
+
+        <!-- Title  node: 1252:59589 -->
+        <h1 class="event-title" data-node-id="1252:59589">
+          Paris Saint-Germain - Bargamo - ALL Accor Lounge - 17 September 2025
+        </h1>
+
+        <!-- Divider -->
+        <hr class="divider" data-node-id="34:3275" />
+
+        <!-- Current bid  node: 1252:59606 -->
+        <div class="bid-box" data-node-id="1252:59607">
+          <span class="bid-box__label">Current bid:</span>
+          <span class="bid-box__value">17,000 Points</span>
+        </div>
+
+        <!-- Bids + Watchers  node: 1252:59610 -->
+        <div class="bid-meta" data-node-id="1252:59610">
+          <div class="bid-meta__item" data-node-id="1252:59611">
+            <img src="https://www.figma.com/api/mcp/asset/34a0b1c8-7bec-4ccd-8710-6fe451987d2a" alt="" class="bid-meta__icon" width="16" height="16" data-node-id="1016:36863" />
+            <span><strong>Bids</strong>: 15</span>
+          </div>
+          <div class="bid-meta__item" data-node-id="1252:59614">
+            <img src="https://www.figma.com/api/mcp/asset/260731f5-25ca-4c4e-a49e-da58bab968a5" alt="" class="bid-meta__icon" width="18" height="14" data-node-id="1252:59438" />
+            <span><strong>Watchers</strong>: 41</span>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="divider" />
+      </div>
+
+      <!-- Description  node: 1252:59618 -->
+      <div class="description" data-node-id="1252:59618">
+
+        <!-- Experience details  node: 1252:59619 -->
+        <div class="experience" data-node-id="1252:59619">
+          <p class="experience__body" data-node-id="1252:59620">
+            Use your <strong>Reward points</strong> to enjoy a one-of-a-kind experience along with your chosen guest from the comfort of the <strong>ALL Accor Lounge</strong>.
+            <br /><br />
+            Bid your Reward points now for a chance to win this unforgettable experience!<br />
+            This Limitless Experiences includes:<br />
+            - <strong>2 seats</strong> in the <strong>ALL Accor Lounge</strong> at the Parc des Princes<br />
+            - <strong>VIP welcome</strong><br />
+            - <strong>Gourmet meal and drinks</strong> at your discretion
+          </p>
+
+          <!-- Detail blocks  node: 1252:59621 -->
+          <div class="detail-blocks" data-node-id="1252:59621">
+
+            <!-- Block 1: Exclusive access  node: 1252:59623 -->
+            <div class="detail-block" data-node-id="1252:59623">
+              <div class="detail-block__img-wrap" data-node-id="1252:59624">
+                <img src="https://www.figma.com/api/mcp/asset/9600de4d-4e58-4c0d-bc80-eca1560052b7" alt="Lounge interior" class="detail-block__img" />
+              </div>
+              <div class="detail-block__caption" data-node-id="1252:59625">
+                <div class="detail-block__title" data-node-id="1252:59626">
+                  <img src="https://www.figma.com/api/mcp/asset/c5b3d4fe-00f7-4445-9660-f0d1717cbaf1" alt="" width="25" height="25" data-node-id="1252:59627" />
+                  <span>Exclusive access like no other</span>
+                </div>
+                <p class="detail-block__body" data-node-id="1252:59630">
+                  Access to the lounge and its associated benefits are typically obtained through "Limitless Experiences" auctions or promotions where members use their Reward Points. The lounge provides a unique way to experience PSG games, with the option to watch the match from the lounge or within specific seating areas.
+                </p>
+              </div>
+            </div>
+
+            <!-- Block 2: Challenge yourself  node: 1252:59640 -->
+            <div class="detail-block" data-node-id="1252:59640">
+              <div class="detail-block__img-wrap" data-node-id="1252:59641">
+                <img src="https://www.figma.com/api/mcp/asset/9600de4d-4e58-4c0d-bc80-eca1560052b7" alt="Experience" class="detail-block__img" />
+              </div>
+              <div class="detail-block__caption" data-node-id="1252:59642">
+                <div class="detail-block__title" data-node-id="1252:59643">
+                  <img src="https://www.figma.com/api/mcp/asset/bb307ade-e3e8-4ace-a567-f863b1610230" alt="" width="25" height="25" data-node-id="1252:59644" />
+                  <span>Challenge yourself!</span>
+                </div>
+                <p class="detail-block__body" data-node-id="1252:59647">
+                  Each exhibit pushes your perception and creativity. Get your tickets now for this immersive experience!
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="divider" />
+
+        <!-- Any question  node: 1252:59719 -->
+        <div class="any-question" data-node-id="1252:59719">
+          <h2 class="any-question__heading" data-node-id="1252:59720">Any question?</h2>
+          <p class="any-question__contact" data-node-id="1252:59721">
+            Contact <a href="#" class="any-question__link">Customer Support</a>
+          </p>
+          <div class="faq-cards" data-node-id="1252:59727">
+            <!-- How it works  node: 1252:59728 -->
+            <a href="#" class="faq-card" data-node-id="1252:59728">
+              <span class="faq-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="13" height="17" rx="2" stroke="#06232c" stroke-width="1.5"/><path d="M8 8h6M8 12h4" stroke="#06232c" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <div class="faq-card__copy" data-node-id="1252:59730">
+                <strong class="faq-card__title" data-node-id="1252:59731">How it works</strong>
+                <p class="faq-card__desc" data-node-id="1252:59732">Learn more about the Loyalty Program</p>
+              </div>
+            </a>
+            <!-- FAQs  node: 1252:59733 -->
+            <a href="#" class="faq-card" data-node-id="1252:59733">
+              <span class="faq-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#06232c" stroke-width="1.5"/><path d="M12 8.5c0-1.1.9-2 2-2s2 .9 2 2c0 1.5-2 2-2 3.5" stroke="#06232c" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="16.5" r=".75" fill="#06232c"/></svg>
+              </span>
+              <div class="faq-card__copy" data-node-id="1252:59735">
+                <strong class="faq-card__title" data-node-id="1252:59736">Frequently asked questions</strong>
+                <p class="faq-card__desc" data-node-id="1252:59737">Solve your doubts about Loyalty Program</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="divider" />
+
+        <!-- About venue  node: 1252:59739 -->
+        <div class="venue" data-node-id="1252:59739">
+          <h2 class="venue__heading" data-node-id="1252:59740">About the venue</h2>
+          <div class="venue__wrapper" data-node-id="1252:59741">
+            <div class="venue__text" data-node-id="1252:59745">
+              <p class="venue__name" data-node-id="1252:59746">ALL Accor Lounge</p>
+              <p class="venue__desc" data-node-id="1252:59747">
+                Located in the 16th arrondissement of Paris, at the intersection of the ring road and the Porte de Saint-Cloud, the Parc des Princes is much more than a stadium: it is an icon of ...
+              </p>
+              <a href="#" class="venue__read-more" data-node-id="1252:59748">Read more</a>
+            </div>
+            <div class="venue__img-wrap" data-node-id="1252:59749">
+              <img src="https://www.figma.com/api/mcp/asset/9600de4d-4e58-4c0d-bc80-eca1560052b7" alt="Parc des Princes" class="venue__img" />
+              <!-- Dot list  node: 1252:59751 -->
+              <div class="dot-list" data-node-id="1252:59751">
+                <span class="dot-list__item dot-list__item--active"></span>
+                <span class="dot-list__item"></span>
+                <span class="dot-list__item"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="divider" />
+
+        <!-- How to get there  node: 1252:59753 -->
+        <div class="directions" data-node-id="1252:59753">
+          <h2 class="directions__heading" data-node-id="1252:59754">How to get there</h2>
+          <div class="directions__content" data-node-id="1252:59755">
+            <div class="directions__text" data-node-id="1252:59758">
+              <p class="directions__venue" data-node-id="1252:59759">Parc des Princes</p>
+              <p class="directions__address" data-node-id="1252:59760">24 Rue du Commandant Guilbaud, 75016 Paris</p>
+            </div>
+            <div class="directions__map-wrap" data-node-id="1252:59761">
+              <img src="https://www.figma.com/api/mcp/asset/9600de4d-4e58-4c0d-bc80-eca1560052b7" alt="Map to Parc des Princes" class="directions__map" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Combined footer  node: 1252:59473 -->
+    <div class="footer" data-node-id="1252:59473">
+      <!-- Place bid button  node: 1252:59474 -->
+      <button class="btn-place-bid" data-node-id="1252:59474">Place bid</button>
+
+      <!-- URL bar / browser chrome  node: 1252:59477 -->
+      <div class="browser-chrome" data-node-id="1252:59477">
+        <div class="browser-chrome__url-bar">
+          <img src="https://www.figma.com/api/mcp/asset/828794e4-4e53-4a8e-8c38-96b8b6a1ee2a" alt="" class="browser-chrome__site-settings" width="15" height="18" />
+          <span class="browser-chrome__url">all-activitiesandevents.accor.com</span>
+          <img src="https://www.figma.com/api/mcp/asset/2d741038-b729-4b57-bf40-85e8cdee03f4" alt="" class="browser-chrome__reload" width="15" height="18" />
+        </div>
+        <nav class="browser-chrome__toolbar" aria-label="Browser navigation">
+          <button aria-label="Back">&#8592;</button>
+          <button aria-label="Forward" disabled>&#8594;</button>
+          <button aria-label="Share">&#8679;</button>
+          <button aria-label="Bookmarks">&#9633;</button>
+          <button aria-label="Tabs">&#9633;&#9633;</button>
+        </nav>
+        <div class="browser-chrome__home-bar"></div>
+      </div>
+    </div>
+
+  </div><!-- /.screen -->
+
   <script src="script.js"></script>
 </body>
 </html>
